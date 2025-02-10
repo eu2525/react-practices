@@ -1,10 +1,11 @@
 import React from 'react';
-import './assets/scss/App.scss';
+import './assets/css/styles.css';
+import Tabbox from './Tabbox';
 
 function App(props) {
     return (
         <div id={'App'}>
-            Tabox 과제
+            <Tabbox />
         </div>
     );
 }
