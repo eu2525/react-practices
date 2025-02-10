@@ -4,7 +4,7 @@ import './assets/scss/App.scss';
 function App(props) {
     return (
         <div id={'App'}>
-             Tabox 과제
+            Tabox 과제
         </div>
     );
 }
