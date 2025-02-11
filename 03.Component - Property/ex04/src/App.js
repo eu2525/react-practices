@@ -5,6 +5,7 @@ function App() {
     return (
         <div id={'App'}>
             <MyComponent
+                props01={10}
                 props02={undefined}
                 props03={undefined} 
                 props04={undefined}
