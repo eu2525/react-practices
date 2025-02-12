@@ -1,21 +1,20 @@
-import React from 'react';
+import React, {useRef, useState} from 'react';
 import Header from './Header.js';
 import Contents from './Contents.js';
 
 
 function App() {
-    /*
+    const refDiv = useRef(null);
+
     return (
-        <div>
+        <div
+            id = "App"
+            ref={refDiv}>
             <Header />
             <Contents />
         </div>
     );
-    */
-
-    return React.createElement('div', {
-        id : 'App'
-    }, React.createElement(Header, null), React.createElement(Contents, null) )
+    
 }
 
 export {App};
