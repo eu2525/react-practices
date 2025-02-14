@@ -10,6 +10,7 @@ function Card({title, description, tasks}) {
             <div className={Task_List}> 
                 {description} 
                 <TaskList tasks={tasks} />
+                <input class='Input_Add_Task' type='text' placeholder='태스크 추가' />
             </div>
         </div>
     );
