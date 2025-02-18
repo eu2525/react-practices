@@ -3,6 +3,7 @@ package ajax.controller.error;
 import java.util.Optional;
 
 import org.springframework.boot.web.servlet.error.ErrorController;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,7 +33,7 @@ public class WhitelabelController implements ErrorController {
 	@RequestMapping("/500")
 	public ResponseEntity<JsonResult<String>> _500(@RequestAttribute String errors) {
 		return ResponseEntity
-				.internalServerError()
+				.status(HttpStatus.OK)
 				.body(JsonResult.fail(errors));
 	}
 
