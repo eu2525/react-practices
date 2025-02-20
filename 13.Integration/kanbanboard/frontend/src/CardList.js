@@ -13,8 +13,6 @@ function CardList({title, cards}) {
                                         description={card.description}
                                         tasks={card.tasks}/>)
             }
-
-            <Card />
         </div>
     );
 }
